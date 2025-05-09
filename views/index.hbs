@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="authors" content="Shayera Georgette P. Lao and Adrianna Doutzen D. Pena" />
+    <meta name="description" content="A virtual pet" />
+    <meta name="keywords" content="pet, pixel, digital, virtual" />
+    <title>Pixel Pets</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="menu.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="ico" href="https://cdn.glitch.global/e762b74c-b350-47a2-9477-8738e57d1aae/favicon%20(1).ico?v=1734167276918" />
+    <script defer src="script.js"></script>
+  </head>
+
+  <div class="back"></div>
+  <body>
+    
+    <nav>
+      <ul class="sidebar" id="mySidebar">
+        <li onclick="hideMenu()"><a href="#" class="menu"><img src="https://cdn.glitch.global/e762b74c-b350-47a2-9477-8738e57d1aae/close_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg?v=1733582500715" style="height=26px; viewbox=0px 96px 960px 960px; width=48px"></a></li>
+        <li><a href="/" class="menu">Home</a></li>
+        <li><a href="/sudoku" class="menu">Sudoku</a></li>
+        <li><a href="/sleep" class="menu">Sleep</a></li>
+        <li><a href="/about" class="menu">About</a></li>
+        <li><a href="/logout" class="menu">Logout</a></li>
+      </ul>
+      <ul>
+        <li onclick="showMenu()"><a href="#" class="menu"><img src="https://cdn.glitch.global/e762b74c-b350-47a2-9477-8738e57d1aae/menu_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg?v=1733576446294" style="height:26px; viewbox:0px 96px 960px 960px; width:48px"></a></li>
+      </ul>
+    </nav>
+    <br>
+    <header>
+      <h1>Pixel Pets</h1>
+      <h>By Shayera Lao &amp; Adrianna Peña</h>
+    </header>
+    <br>
+    
+    <input type="text" id="nameInput" placeholder="Name goes here">
+    <button onclick="savePet()" class="save-btn">Save Pet</button>
+    
+    <div id="nameDisplay"></div>
+    <pet id="petDisplay"></pet>
+  
+    <petselect>
+      <a href="#cat"><div class="cat pet" id="cat" onclick="selectCat()"></div></a>
+      <a href="#bunny"><div class="bunny pet" id="bunny" onclick="selectBunny()"></div></a>
+      <a href="#capybara"><div class="capybara pet" id="capybara" onclick="selectCapybara()"></div></a>
+    </petselect>
+    
+    <div class="pet-list" id="petList">
+      <!-- Pet list will be populated here -->
+    </div>
+    
+    <div class="user-email">{{user.email}}</div>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="authors"
+      content="Shayera Georgette P. Lao and Adrianna Doutzen D. Pena"
+    />
+    <meta name="description" content="A virtual pet" />
+    <meta name="keywords" content="pet,pixel, digital, virtual" />
+    <title>Pixel Pets</title>
+    <link href="menu.css" rel="stylesheet" type="text/css" />
+    <link href="sleep.css" rel="stylesheet" type="text/css" />
+
+    <link
+      rel="icon"
+      type="ico"
+      href="https://cdn.glitch.global/e762b74c-b350-47a2-9477-8738e57d1aae/favicon%20(1).ico?v=1734167276918"
+    /> 
+    <script defer src="script.js"></script>
+    <script defer src="sleep.js"></script>
+  </head>
+<div id="fullScreenImage"></div>
+
+  <body>
+    <nav>
+      <ul class="sidebar" id = "mySidebar">
+        <li onclick= "hideMenu()"><a href = "#" class = "menu"><img src="https://cdn.glitch.global/e762b74c-b350-47a2-9477-8738e57d1aae/close_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg?v=1733582500715" style="height=26px; viewbox=0px 96px 960px 960px; width=48px"></a></li>
+        <li><a href = "/" class = "menu">Home</a></li>
+        <li><a href = "/sudoku" class = "menu">Sudoku</a></li>
+        <li><a href = "/sleep" class = "menu">Sleep</a></li>
+        <li><a href = "/about" class = "menu">About</a></li>
+        <li><a href="/logout" class="menu">Logout</a></li>
+        
+      </ul>
+      <ul>
+        <li onclick= "showMenu()"><a href="#" class = "menu"><img src = "https://cdn.glitch.global/e762b74c-b350-47a2-9477-8738e57d1aae/menu_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg?v=1733576446294" style="height:26px; viewbox:0px 96px 960px 960px; width:48px"></a></li>
+      </ul>
+     
+    </nav>
+    
+    <div class="pet-list" id="petList"></div>
+
+     <zees>
+      <h3 id = "smallZ"></h3>
+      <h2 id = "middleZ"></h2>
+      <h1 id = "bigZ"></h1>
+      </zees>
+
+       <display>
+      <div id="nameDisplay"></div>
+      <div id="petDisplay"></div>
+    </display>
+
+     <h3 id="ins">
+      Click on the lamp to dim the lights so that your pet can sleep!
+    </h3>
+
+    
+    <a href="#lamp">
+      <div class="night-lamp" onclick="dimLight();sleep();"></div>
+    </a>
+
+    
+  </body>
+  
+   <script>
+      function showMenu() {
+        document.getElementById("mySidebar").style.display = 'flex';
+        //const menu = document.querySelector('.sidebar');
+        //sidebar.style.display = 'flex';
+      }
+      function hideMenu() {
+        document.getElementById("mySidebar").style.display = 'none';
+        //const menu = document.querySelector('.sidebar');
+        //sidebar.style.display = 'none';
+      }
+    </script>
+  
+
+</html>

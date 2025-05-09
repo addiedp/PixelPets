@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Login - Pixel Pets</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+    <link href="/menu.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="back"></div>
+    <header>
+        <h1>Pixel Pets</h1>
+        <h>Login or Register</h>
+    </header>
+    
+    {{#if error}}
+    <div class="error">{{error}}</div>
+    {{/if}}
+    
+    <div class="auth-container">
+        <form action="/login" method="POST" class="auth-form">
+            <h2>Login</h2>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+
+        <form action="/register" method="POST" class="auth-form">
+            <h2>Register</h2>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
