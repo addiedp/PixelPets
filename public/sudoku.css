@@ -1,0 +1,202 @@
+html {
+  background-color: #a9e2ff;
+}
+
+body {
+  font-family: 'Pixelify Sans', sans-serif;
+  text-shadow: -1px -1px 0 #3882a3, 1px -1px 0 #3882a3, -1px 1px 0 #3882a3,
+    1px 1px 0 #3882a3;
+  color: white;
+  text-align: center;
+}
+
+hr {
+  width: 500px;
+  border-top: solid #538ba6;
+  margin: auto;
+}
+
+#errors {
+  color: tomato;
+  font-family: 'Tiny5-Regular', sans-serif;
+}
+
+#board {
+  width: 450px;
+  height: 450px;
+
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Tiny5-Regular', sans-serif;
+}
+
+.tile {
+  width: 48px;
+  height: 48px;
+  border: 1px solid #58b3df;
+
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#digits {
+  width: 450px;
+  height: 50px;
+
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Tiny5-Regular', sans-serif;
+}
+
+.number {
+  width: 44px;
+  height: 44px;
+  border: 1px solid #538ba6;
+  margin: 2px;
+
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.number-selected {
+  background-color: #77c5eb;
+}
+
+.tile-start {
+  background-color: #a0d6f1;
+}
+
+.horizontal-line {
+  border-bottom: 2px solid #538ba6;
+}
+
+.vertical-line {
+  border-right: 2px solid #538ba6;
+}
+
+#pixelpet {
+  width: 100px;
+  height: 130px;
+
+  position: relative;
+  left: 350px;
+  bottom: 350px;
+}
+
+@font-face {
+  font-family: 'Pixelify Sans';
+  src: url('https://cdn.glitch.global/e762b74c-b350-47a2-9477-8738e57d1aae/PixelifySans-Regular.ttf?v=1733564151146');
+}
+
+@font-face {
+  font-family: 'Tiny5-Regular';
+  src: url('https://cdn.glitch.global/e762b74c-b350-47a2-9477-8738e57d1aae/Tiny5-Regular.ttf?v=1733997801639');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  width: 500px;
+  border-color: #58b3df;
+  border-style: solid;
+  border-width: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: white;
+  font-family: 'Pixelify Sans', sans-serif;
+  padding: 5px;
+
+  background-color: #77c5eb;
+}
+
+nav {
+  background-color: #58b3df;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav li {
+  height: 50px;
+}
+
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar a {
+  width: 90%;
+}
+
+nav a:hover {
+  background-color: #a9e2ff;
+}
+
+.sidebar li {
+  width: 100%;
+}
+
+nav li:first-child {
+  margin-right: auto;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: #58b3df;
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 10px;
+}
+@font-face {
+  font-family: 'Tiny5-Regular';
+  src: url('https://cdn.glitch.global/e762b74c-b350-47a2-9477-8738e57d1aae/Tiny5-Regular.ttf?v=1733997801639');
+}
+
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300%;
+  height: 300%;
+  background-image: url('https://cdn.glitch.global/7e443b07-ef1f-47cb-94fc-116ae020bbae/foot-print.png?v=1746433410817');
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  transform: rotate(45deg);
+  animation: scrollDown 60s linear infinite;
+  opacity: 0.15;
+  z-index: -1;
+}

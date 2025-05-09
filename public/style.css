@@ -1,0 +1,296 @@
+header {
+  width: 400px;
+  margin: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  border-color: white;
+  border-style: solid;
+  border-width: 5px;
+  color: white;
+  background-color: #58b3df;
+  font-family: 'Pixelify Sans', sans-serif;
+  text-shadow: -1px -1px 0 #3882a3, 1px -1px 0 #3882a3, -1px 1px 0 #3882a3,
+    1px 1px 0 #3882a3;
+}
+
+.user-email {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  background-color: #58b3df;
+  padding: 8px 15px;
+  border-radius: 4px;
+  color: white;
+  font-family: 'Pixelify Sans', sans-serif;
+  border: 2px solid white;
+  z-index: 1000;
+}
+
+.menu {
+  width: 500px;
+  border-color: #58b3df;
+  border-style: solid;
+  border-width: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: white;
+  font-family: 'Pixelify Sans', sans-serif;
+  padding: 5px;
+  background-color: #77c5eb;
+  text-shadow: -1px -1px 0 #3882a3, 1px -1px 0 #3882a3, -1px 1px 0 #3882a3,
+    1px 1px 0 #3882a3;
+}
+
+html {
+  background-color: #a9e2ff;
+}
+
+@font-face {
+  font-family: 'Pixelify Sans';
+  src: url('https://cdn.glitch.global/e762b74c-b350-47a2-9477-8738e57d1aae/PixelifySans-Regular.ttf?v=1733564151146');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.pet {
+  height: 150px;
+  width: 150px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.pet:hover {
+  animation: scale 1s linear infinite;
+}
+
+.cat {
+  background-image: url('https://cdn.glitch.global/7e443b07-ef1f-47cb-94fc-116ae020bbae/thumbnails_pixil-frame-0.png?v=1738414265057');
+  background-repeat: no-repeat;
+}
+
+#cat:target {
+  background-image: url('https://cdn.glitch.global/7e443b07-ef1f-47cb-94fc-116ae020bbae/thumbnails_pixil-frame-0%20(3).png?v=1738414553124');
+  background-repeat: no-repeat;
+}
+
+.bunny {
+  background-image: url('https://cdn.glitch.global/7e443b07-ef1f-47cb-94fc-116ae020bbae/thumbnails_baseBunny%20(1).png?v=1738414134081');
+  background-repeat: no-repeat;
+}
+
+#bunny:target {
+  background-image: url('https://cdn.glitch.global/7e443b07-ef1f-47cb-94fc-116ae020bbae/bunny-outlined%20(2).png?v=1738417607782');
+  background-repeat: no-repeat;
+}
+
+.capybara {
+  background-image: url('https://cdn.glitch.global/7e443b07-ef1f-47cb-94fc-116ae020bbae/cap.png?v=1746698737726');
+  background-repeat: no-repeat;
+}
+
+#capybara:target {
+  background-image: url('https://cdn.glitch.global/7e443b07-ef1f-47cb-94fc-116ae020bbae/capy.png?v=1746698633466');
+  background-repeat: no-repeat;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.auth-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.auth-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.auth-form h2 {
+  color: #58b3df;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-family: 'Pixelify Sans', sans-serif;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 2px solid #58b3df;
+  border-radius: 4px;
+  font-family: 'Pixelify Sans', sans-serif;
+}
+
+.auth-form button {
+  width: 100%;
+  padding: 0.75rem;
+  background: #58b3df;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 1rem;
+}
+
+.auth-form button:hover {
+  background: #3882a3;
+}
+
+.error {
+  background: #ff6b6b;
+  color: white;
+  padding: 1rem;
+  margin: 1rem auto;
+  max-width: 400px;
+  text-align: center;
+  border-radius: 4px;
+  font-family: 'Pixelify Sans', sans-serif;
+}
+
+.pet-list {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pet-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.pet-item:last-child {
+  border-bottom: none;
+}
+
+.pet-controls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.save-btn {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 2px solid white;
+  color: white;
+  border-radius: 4px;
+  font-family: 'Pixelify Sans', sans-serif;
+  background-color: #58b3df;
+  margin-top: 20px;
+  margin-left: 48%;
+}
+
+.pet-controls button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Pixelify Sans', sans-serif;
+}
+
+.edit-btn {
+  background: #58b3df;
+  color: white;
+}
+
+.delete-btn {
+  background: #ff6b6b;
+  color: white;
+}
+
+#nameInput {
+  background-color: #58b3df;
+  margin: auto;
+  border-style: solid;
+  border-color: white;
+  border-width: 5px;
+  height: 30px;
+  color: white;
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+pet {
+  width: 300px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto auto auto;
+}
+
+petselect {
+  width: 670px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px auto auto auto;
+  border-style: solid;
+  height: 250px;
+  border-color: white;
+  border-width: 10px;
+  background-color: #77c5eb;
+}
+
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300%;
+  height: 300%;
+  background-image: url('https://cdn.glitch.global/7e443b07-ef1f-47cb-94fc-116ae020bbae/foot-print.png?v=1746433410817');
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  transform: rotate(45deg);
+  animation: scrollDown 60s linear infinite;
+  opacity: 0.15;
+  z-index: -1;
+}
+
+@keyframes scrollDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(120px);
+  }
+}
+
+#nameDisplay {
+  left: 50%;
+  text-align: center;
+  color: white;
+  font-family: 'Pixelify Sans', sans-serif;
+  text-shadow: -1px -1px 0 #3882a3, 1px -1px 0 #3882a3, -1px 1px 0 #3882a3,
+    1px 1px 0 #3882a3;
+}

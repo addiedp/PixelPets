@@ -1,0 +1,190 @@
+html {
+  background-image: url('https://cdn.glitch.global/7e443b07-ef1f-47cb-94fc-116ae020bbae/475047405_883390827086742_3689683729112309269_n.jpg?v=1738682320582');
+  background-repeat: no-repeat;
+}
+
+.night-lamp {
+  width: 250px;
+  height: 250px;
+  background-image: url('https://cdn.glitch.global/7e443b07-ef1f-47cb-94fc-116ae020bbae/lamp.png?v=1738720494034');
+  background-size: cover;
+  cursor: pointer;
+  position: fixed;
+  top: 420px;
+  left: 50px;
+  z-index: 10;
+}
+
+#fullScreenImage {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 5;
+}
+display {
+  bottom: 175px;
+  right: 625px;
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  font-family: 'Tiny5-Regular', sans-serif;
+  text-shadow: -1px -1px 0 #58b3df, 1px -1px 0 white, -1px 1px 0 white,
+    1px 1px 0 #58b3df;
+  color: #58b3df;
+}
+
+zees {
+  position: fixed;
+  bottom: 350px;
+  right: 750px;
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  font-family: 'Tiny5-Regular', sans-serif;
+  text-shadow: -1px -1px 0 #58b3df, 1px -1px 0 white, -1px 1px 0 white,
+    1px 1px 0 #58b3df;
+  color: #58b3df;
+}
+
+#petDisplay {
+  margin-left: 45%;
+  margin-top: 10%;
+  width: 300px;
+  height: 250px;
+  background-size: cover;
+}
+
+pet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto auto auto;
+}
+
+header {
+  width: 400px;
+  margin: auto;
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+
+  border-color: white;
+  border-style: solid;
+  border-width: 5px;
+
+  color: white;
+  background-color: #58b3df;
+
+  font-family: 'Pixelify Sans', sans-serif;
+  text-shadow: -1px -1px 0 #3882a3, 1px -1px 0 #3882a3, -1px 1px 0 #3882a3,
+    1px 1px 0 #3882a3;
+}
+
+#ins {
+  position: relative;
+  margin-top: 325px;
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  z-index: 20;
+  width: 400px;
+  margin: left;
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: left;
+
+  border-color: white;
+  border-style: solid;
+  border-width: 5px;
+
+  color: white;
+  background-color: #58b3df;
+
+  font-family: 'Pixelify Sans', sans-serif;
+  text-shadow: -1px -1px 0 #3882a3, 1px -1px 0 #3882a3, -1px 1px 0 #3882a3,
+    1px 1px 0 #3882a3;
+}
+
+.menu {
+  width: 500px;
+  border-color: #58b3df;
+  border-style: solid;
+  border-width: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: white;
+  font-family: 'Pixelify Sans', sans-serif;
+  padding: 5px;
+
+  background-color: #77c5eb;
+  text-shadow: -1px -1px 0 #3882a3, 1px -1px 0 #3882a3, -1px 1px 0 #3882a3,
+    1px 1px 0 #3882a3;
+}
+
+html {
+  background-color: #a9e2ff;
+}
+
+@font-face {
+  font-family: 'Pixelify Sans';
+  src: url('https://cdn.glitch.global/e762b74c-b350-47a2-9477-8738e57d1aae/PixelifySans-Regular.ttf?v=1733564151146');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*Pet selection stuff*/
+
+#nameDisplay {
+  margin-top: 10%;
+  margin-left: 50%;
+}
+
+.pet {
+  height: 150px;
+  width: 150px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.pet-list {
+  position: absolute;
+  margin-left: 80%;
+  max-width: 300px;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pet-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.pet-item:last-child {
+  border-bottom: none;
+}
+
+.pet-controls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+petselect {
+  width: 500px;
+  height: 250px;
+}
