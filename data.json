@@ -1,0 +1,126 @@
+{
+  "users": [
+    {
+      "id": "1746674470519",
+      "email": "addiedoutzen1@gmail.com",
+      "password": "addie"
+    },
+    {
+      "id": "1746674531601",
+      "email": "123@mail.com",
+      "password": "123"
+    },
+    {
+      "id": "1746767254641",
+      "email": "oreo.ad@mail.com",
+      "password": "oreo"
+    }
+  ],
+  "pets": [
+    {
+      "id": "1746674479592",
+      "userId": "1746674470519",
+      "name": "bun",
+      "type": "bunny",
+      "createdAt": "2025-05-08T03:21:19.592Z"
+    },
+    {
+      "id": "1746674515236",
+      "userId": "1746674470519",
+      "name": "lili",
+      "type": "cat",
+      "createdAt": "2025-05-08T03:21:55.236Z"
+    },
+    {
+      "id": "1746674539740",
+      "userId": "1746674531601",
+      "name": "lala",
+      "type": "cat",
+      "createdAt": "2025-05-08T03:22:19.740Z"
+    },
+    {
+      "id": "1746675113406",
+      "userId": "1746674470519",
+      "name": "bunn",
+      "type": "bunny",
+      "createdAt": "2025-05-08T03:31:53.406Z"
+    },
+    {
+      "id": "1746685358335",
+      "userId": "1746674470519",
+      "name": "ct",
+      "type": "cat",
+      "createdAt": "2025-05-08T06:22:38.335Z"
+    },
+    {
+      "id": "1746685819334",
+      "userId": "1746674531601",
+      "name": "Cinnamon",
+      "type": "bunny",
+      "createdAt": "2025-05-08T06:30:19.334Z"
+    },
+    {
+      "id": "1746686236180",
+      "userId": "1746674470519",
+      "name": "cat",
+      "type": "cat",
+      "createdAt": "2025-05-08T06:37:16.180Z"
+    },
+    {
+      "id": "1746698711668",
+      "userId": "1746674470519",
+      "name": "barry",
+      "type": "capybara",
+      "createdAt": "2025-05-08T10:05:11.668Z"
+    },
+    {
+      "id": "1746699150872",
+      "userId": "1746674470519",
+      "name": "clay",
+      "type": "capybara",
+      "createdAt": "2025-05-08T10:12:30.872Z"
+    },
+    {
+      "id": "1746702159604",
+      "userId": "1746674531601",
+      "name": "Barty",
+      "type": "capybara",
+      "createdAt": "2025-05-08T11:02:39.604Z"
+    },
+    {
+      "id": "1746756813576",
+      "userId": "1746674470519",
+      "name": "❤️☆*: .｡. o(≧▽≦)o .｡.:*☆",
+      "type": "capybara",
+      "createdAt": "2025-05-09T02:13:33.576Z"
+    },
+    {
+      "id": "1746756857946",
+      "userId": "1746674470519",
+      "name": "<h1>Bebe</h1>",
+      "type": "capybara",
+      "createdAt": "2025-05-09T02:14:17.946Z"
+    },
+    {
+      "id": "1746767262215",
+      "userId": "1746767254641",
+      "name": "Orange",
+      "type": "capybara",
+      "createdAt": "2025-05-09T05:07:42.215Z"
+    },
+    {
+      "id": "1746767282690",
+      "userId": "1746767254641",
+      "name": "Brownie",
+      "type": "bunny",
+      "createdAt": "2025-05-09T05:08:02.690Z"
+    },
+    {
+      "id": "1746767308212",
+      "userId": "1746767254641",
+      "name": "Ginger",
+      "type": "cat",
+      "createdAt": "2025-05-09T05:08:28.212Z"
+    }
+  ]
+}
